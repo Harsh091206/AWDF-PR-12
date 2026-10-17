@@ -1,6 +1,6 @@
 # Practical 6: Full Stack Integration (React + Node + MongoDB)
 
-[![CI Pipeline](https://github.com/actions/workflows/ci.yml/badge.svg)](https://github.com)
+[![CI Pipeline](https://github.com/Harsh091206/AWDF-PR-12/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Harsh091206/AWDF-PR-12/actions/workflows/ci.yml)
 
 Task Manager app wiring a React (Vite) frontend to a Node/Express/MongoDB backend,
 built on top of Practicals 1–5.
