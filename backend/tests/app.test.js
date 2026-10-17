@@ -15,4 +15,13 @@ describe('Task Manager API - CI/CD Automated Tests', () => {
     expect(res.statusCode).toBe(404);
     expect(res.body).toHaveProperty('error');
   });
+
+  // Test 3: AI generate-description graceful degradation / response
+  test('POST /api/ai/generate-description returns description with fallback support', async () => {
+    const res = await request(app)
+      .post('/api/ai/generate-description')
+      .send({ title: 'Deploy application with Docker' });
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toHaveProperty('description');
+  });
 });

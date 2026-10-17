@@ -97,3 +97,14 @@ export async function deleteTask(id) {
   });
   return handleResponse(res);
 }
+
+// AI API: Generate Task Description
+export async function generateAiDescription(title) {
+  const res = await fetch(`${BASE_URL}/api/ai/generate-description`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title })
+  });
+  return res.json();
+}
+

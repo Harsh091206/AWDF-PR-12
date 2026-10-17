@@ -5,6 +5,7 @@ require('dotenv').config();
 
 const taskRoutes = require('./routes/tasks');
 const authRoutes = require('./routes/auth');
+const aiRoutes = require('./routes/ai');
 require('./listeners');
 
 const app = express();
@@ -40,6 +41,7 @@ app.get('/', (req, res) => {
 
 app.use('/tasks', taskRoutes);
 app.use('/auth', authRoutes);
+app.use('/api/ai', aiRoutes);
 
 // ----- 404 handler for undefined routes -----
 app.use((req, res) => {

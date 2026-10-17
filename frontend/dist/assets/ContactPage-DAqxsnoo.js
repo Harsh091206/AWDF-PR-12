@@ -1,0 +1,1 @@
+import{j as e}from"./index-B8xVdUv8.js";function a(){return e.jsxs("div",{className:"panel",style:{marginTop:"20px"},children:[e.jsx("h2",{children:"Contact"}),e.jsx("p",{style:{color:"var(--muted)"},children:"This is another lazy-loaded dummy route."})]})}export{a as default};
